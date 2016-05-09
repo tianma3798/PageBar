@@ -7,19 +7,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <script src="../Js/jquery-1.8.2.min.js"></script>
-    <%-- <link href="../Js/Page4.0/pageBar4.0.css" rel="stylesheet" />--%>
-    <link href="../Js/Page4.0/pageBar4.0.less" rel="stylesheet/less" />
-    <script src="../Js/Page4.0/pageBar4.0.js"></script>
-    <script src="../Js/less.min.js"></script>
+    <link href="../Js/Page4.0/pagebar4.0.min.css" rel="stylesheet" />
+    <script src="../Js/Page4.0/pageBar4.0.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="width:500px;margin:auto; margin-top:50px;">
-            <h3>
-                蓝色小按钮样式
+        <div style="width: 500px; margin: auto; margin-top: 50px;">
+            <h3>蓝色小按钮样式
             </h3>
             <div class="pageList">
-                <table  border="1" cellpadding="10" width="100%">
+                <table border="1" cellpadding="10" width="100%">
                     <asp:Repeater ID="Repeater1" runat="server">
                         <ItemTemplate>
                             <tr>
@@ -30,14 +27,13 @@
                     </asp:Repeater>
                 </table>
             </div>
-
             <div id="pageOne" class="pageBar"></div>
             <script type="text/javascript">
                 var pageOne = $('#pageOne').pageBar({
                     pageIndex: '<%=pageIndex%>',
                     pageSize: '<%=pageSize%>',
                     recordCount: '<%=recordCount%>',
-                    showType:'bluePager',
+                    showType: 'bluePager',
                     submitEvent: function (index) {
                         goToIndex(index);
                     }

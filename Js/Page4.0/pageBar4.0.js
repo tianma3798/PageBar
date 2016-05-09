@@ -86,8 +86,10 @@
                 top: (_elem.height() - pageBar_Go.height()) / 2 + 1
             });
 
-            if (_opts.singleShow == false) {
-                _elem.hide();
+            if (_opts.singleShow) {
+                if (_opts.pageCount == 1) {
+                    _elem.hide();
+                }
             }
         },
         //产生右侧按钮----default 样式

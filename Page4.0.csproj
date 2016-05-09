@@ -79,6 +79,8 @@
     <Content Include="Js\jquery-1.8.2.min.js" />
     <Content Include="Js\less.min.js" />
     <Content Include="Js\Page4.0\pagebar4.0.css" />
+    <Content Include="Js\Page4.0\pagebar4.0.min.css" />
+    <Content Include="Js\Page4.0\pageBar4.0.min.js" />
     <Content Include="packages.config" />
     <Content Include="Css\one.less" />
     <Content Include="Css\two.less" />
@@ -94,6 +96,7 @@
     <Content Include="Example\default.aspx" />
     <Content Include="Js\Page4.0\pageBar4.0-old.css" />
     <Content Include="Js\Page4.0\pageBar4.0.js" />
+    <Content Include="View\pager1.html" />
     <Content Include="View\view1.html" />
     <Content Include="View\view2.html" />
     <Content Include="Web.config" />
@@ -181,8 +184,11 @@
   <PropertyGroup>
     <PreBuildEvent>$(SolutionDir)packages\dotless.1.5.2\tool\dotless.Compiler.exe   $(ProjectDir)css\one.less  $(ProjectDir)css\one.css
 $(SolutionDir)packages\dotless.1.5.2\tool\dotless.Compiler.exe   $(ProjectDir)css\two.less  $(ProjectDir)css\two.css
-$(SolutionDir)packages\dotless.1.5.2\tool\dotless.Compiler.exe   $(ProjectDir)js\page4.0\pagebar4.0.less  $(ProjectDir)js\page4.0\pagebar4.0.css
-</PreBuildEvent>
+$(SolutionDir)packages\dotless.1.5.2\tool\dotless.Compiler.exe   $(ProjectDir)js\page4.0\pagebar4.0.less  $(ProjectDir)js\page4.0\pagebar4.0.css</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

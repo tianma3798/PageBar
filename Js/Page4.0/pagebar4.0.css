@@ -97,6 +97,7 @@
 .pageBar span.moreRight:hover {
   background-color: transparent;
 }
+
 .pageBar span.moreRight,
 .pageBar span.moreLeft {
   text-align: center;

@@ -32,21 +32,21 @@
             </div>
             <div id="pageOne" class="pageBar"></div>
             <script type="text/javascript">
-                var pageOne = $('#pageOne').pageBar({
-                    pageIndex: '<%=pageIndex%>',
-                    pageSize: '<%=pageSize%>',
-                    recordCount: '<%=recordCount%>',
-                    showType: 'greenPager',
-                    submitEvent: function (index) {
-                        goToIndex(index);
-                    }
-                });
-                //分页按钮事件
-                function goToIndex(index) {
-                    var loc = window.location;
-                    var url = 'http://' + loc.host + loc.pathname + '?pageIndex=' + index;
-                    location.href = url;
-                }
+var pageOne = $('#pageOne').pageBar({
+    pageIndex: '<%=pageIndex%>',
+    pageSize: '<%=pageSize%>',
+    recordCount: '<%=recordCount%>',
+    showType: 'greenPager',
+    submitEvent: function (index) {
+        goToIndex(index);
+    }
+});
+//分页按钮事件
+function goToIndex(index) {
+    var loc = window.location;
+    var url = 'http://' + loc.host + loc.pathname + '?pageIndex=' + index;
+    location.href = url;
+}
             </script>
         </div>
     </form>
